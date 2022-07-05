@@ -215,6 +215,7 @@ h4 {
 }
 
 .title {
+  text-transform: uppercase;
   text-align: center;
   color: #222222;
   margin-bottom: 38px;
