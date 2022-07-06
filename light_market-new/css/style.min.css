@@ -701,9 +701,6 @@ input::-webkit-inner-spin-button {
   height: 100%;
   background-color: #00000035;
 }
-.nuar_blk:hover {
-  background-color: #00000050;
-}
 
 .nuar_color {
   position: relative;
@@ -3596,6 +3593,45 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 .popular__row {
   margin-bottom: 68px;
+}
+
+.popular__row {
+  display: flex;
+  margin: 0 -10px;
+  margin-bottom: 55px;
+}
+
+.popular__column {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 20%;
+  padding: 0 10px;
+}
+
+.circleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.circleCard__img {
+  position: relative;
+  width: 145px;
+  height: 145px;
+  background: #F4F4F4;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.circleCard__img-nuar_blk {
+  background-color: #00000008;
+}
+
+.circleCard__name {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .prod-card {

@@ -369,6 +369,46 @@ h4 {
 	}
 }
 
+.popular__row {
+	display: flex;
+	margin: 0 -10px;
+	margin-bottom: 55px;
+}
+
+.popular__column {
+	display: flex;
+	justify-content: center;
+	flex: 0 1 20%;
+	padding: 0 10px;
+}
+
+.circleCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.circleCard__img {
+	position: relative;
+	width: 145px;
+	height: 145px;
+	// padding: 3px;
+	background: #F4F4F4;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.circleCard__img-nuar_blk {
+	background-color: #00000008;
+}
+
+.circleCard__name {
+	font-size: 16px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 .prod-card {
 	// .prod-card__body
 	// margin: 0 -8.5px;
@@ -478,6 +518,7 @@ h4 {
 		}
 	}
 }
+
 
 // ==========================================================================================================================
 
