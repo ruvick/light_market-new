@@ -409,83 +409,126 @@ h4 {
 	text-transform: uppercase;
 }
 
+//========================================================================================================================================================
+
 .prod-card {
-	// .prod-card__body
-	// margin: 0 -8.5px;
-	justify-content: space-between;
+	margin: 0 -6.5px;
+
+	&__column {
+		flex: 0 1 21.6%;
+		padding: 0 6.5px;
+	}
 
 	&__body {
-		// max-width: 252px;
-		// width: 100%;
-		// padding: 20px 20px 18px 22px;
-		padding: 15px 20px 15px 22px;
-		flex-direction: column;
-		border: 0.4px solid #c7c9cb;
-		flex: 0 1 19%;
-	}
-
-	// .prod-card__link
-	&__link {
-		// margin: 0 auto 32px auto;
-		margin: 0 auto 13px auto;
-		flex: 1 1 auto;
-		overflow: hidden;
 		position: relative;
-
-		img {
-			max-width: 100%;
-			max-height: 195px;
-			flex: 0 0 175px;
-		}
+		flex: 0 1 100%;
+		padding: 10px 27px 13px 27px;
+		flex-direction: column;
+		border: 1px solid #d2d1d1;
+		border-radius: 10px;
 	}
 
-	&__sale {
+	&__img {
+		flex: 0 1 270px;
+		height: 270px;
+		overflow: hidden;
+		margin-bottom: 23px;
+	}
+
+	&__favorites-icon {
 		position: absolute;
+		right: 17px;
 		z-index: 5;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-weight: 500;
-		width: 40px;
-		height: 31px;
-		background: #8abb2a;
-		color: #fff;
-		margin-top: 4px;
 	}
 
-	&__text {
-		h4 {
-			line-height: 18px;
-			margin-bottom: 10px;
-			// .prod-card__manuf
-		}
-	}
+	&__text {}
 
-	&__manuf {
+	&__text-title {
+		font-size: 14px;
 		line-height: 18px;
-		color: #8a7165;
 		margin-bottom: 10px;
 	}
 
-	// .prod-card__avail
-	&__avail {
-		line-height: 18px;
-		color: #d3820f;
-		margin-bottom: 14.5px;
+	&__text-sale {
+		font-size: 16px;
+		line-height: 20.75px;
+		color: #ffb400;
+		margin-bottom: 15px;
 	}
 
-	// .prod-card__price-item
+	&__inner {
+		justify-content: space-between;
+		margin-bottom: 11px;
+	}
+
+	&__manuf {
+		font-size: 14px;
+		line-height: 18px;
+		text-align: left;
+		color: #947667;
+		margin-bottom: 10px;
+	}
+
+	&__avail {
+		font-size: 14px;
+		line-height: 18px;
+		color: #ffb400;
+	}
+
 	&__price-item {
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	// .prod-card__price
 	&__price {
 		font-size: 20px;
-		font-weight: 600;
+		font-weight: 700;
+		line-height: 20.75px;
+	}
+
+	&__old-price-block {
+		align-items: center;
+		margin-bottom: 12px;
+	}
+
+	&__old-price {
+		font-size: 14px;
+		line-height: 18px;
+		color: #8c8b8b;
+		text-decoration: line-through #DD1A1E;
+		margin-right: 15px;
+	}
+
+	&__sale-icon {
+		border-radius: 9.09px;
+		background: #dd1a1e;
+		font-size: 12.96px;
+		line-height: 16.81px;
+		color: #fff;
+		padding: 2px 4px;
 	}
 }
+
+.favorites-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 17px;
+	height: 16px;
+
+	&::before {
+		content: '';
+		float: left;
+		flex: 0 1 100%;
+		height: 100%;
+		background-size: 100%;
+		background-position: 0 0;
+		background-repeat: no-repeat;
+		background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNy4yMzMiIGhlaWdodD0iMTUuODIxIiB2aWV3Qm94PSIwIDAgMTcuMjMzIDE1LjgyMSI+DQogIDxnIGlkPSLQodCz0YDRg9C/0L/QuNGA0L7QstCw0YLRjF8xMjAiIGRhdGEtbmFtZT0i0KHQs9GA0YPQv9C/0LjRgNC+0LLQsNGC0YwgMTIwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTAyMC4xOTggLTIwMjMuMzg5KSI+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xMzMiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDEzMyIgZD0iTTEwMzUuNTMyLDIwMjQuODUxYS4yOTQuMjk0LDAsMCwwLS4zNzkuMDQ5LjIyLjIyLDAsMCwwLS4wMjcuMzE4QzEwMzUuMTQsMjAyNC45ODksMTAzNS4zMjcsMjAyNC45NCwxMDM1LjUzMiwyMDI0Ljg1MVoiIGZpbGw9Im5vbmUiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzEzNCIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgMTM0IiBkPSJNMTAzNS4zNzMsMjAyNS41NDJhLjQzNC40MzQsMCwwLDAtLjEuMDQ0LjMxMS4zMTEsMCwwLDAsLjQ2NS0uMjIyLjM0Ny4zNDcsMCwwLDAtLjAzNS0uMTExYy0uMDMyLjAyNy0uMDg2LjA0OS0uMDkzLjA4MUEuMjI1LjIyNSwwLDAsMSwxMDM1LjM3MywyMDI1LjU0MloiIGZpbGw9Im5vbmUiLz4NCiAgICA8cGF0aCBpZD0i0JrQvtC90YLRg9GAXzEzNSIgZGF0YS1uYW1lPSLQmtC+0L3RgtGD0YAgMTM1IiBkPSJNMTAyMy4xMjIsMjAyNC45NTFhLjEuMSwwLDAsMCwuMDU5LS4wNzVjMC0uMDI0LS4wNDctLjA3MS0uMDYzLS4wNjdhLjY1OS42NTksMCwwLDAtLjI3Ny4xLjIzOS4yMzksMCwwLDAtLjAxMy4zMzJDMTAyMi45MDcsMjAyNS4wMzcsMTAyMi45MDcsMjAyNS4wMzgsMTAyMy4xMjIsMjAyNC45NTFaIiBmaWxsPSJub25lIi8+DQogICAgPHBhdGggaWQ9ItCa0L7QvdGC0YPRgF8xMzYiIGRhdGEtbmFtZT0i0JrQvtC90YLRg9GAIDEzNiIgZD0iTTEwMzEuNjUxLDIwMjQuNTg3YTMuNSwzLjUsMCwwLDAtMS42NDEuNjYzYy0uMzc0LjI4OC0uNzA2LjYzMi0xLjA1Mi45NTYtLjA5NC4wODktLjE1NS4xMjYtLjI2MS4wMDYtLjE2OS0uMTkyLS4zNTgtLjM2Ni0uNTQxLS41NDVhMy45LDMuOSwwLDAsMC0xLjg4MS0xLjAzMiwzLjk3NSwzLjk3NSwwLDAsMC0xLjU2NC0uMDUyLDMuNzQyLDMuNzQyLDAsMCwwLTEuNDE2LjUxMSwzLjkxNCwzLjkxNCwwLDAsMC0xLjk0MiwzLjM1NywzLjc4LDMuNzgsMCwwLDAsMS4xMjEsMi44NjVjMi4wNTksMi4wODMsNC4xMzgsNC4xNDYsNi4yMDYsNi4yMi4xLjEuMTYyLjEyMS4yNzYuMDA3cTMuMDczLTMuMDgyLDYuMTU1LTYuMTU5YTMuODY0LDMuODY0LDAsMCwwLDEuMTc2LTIuOSwzLjc4NCwzLjc4NCwwLDAsMC0xLjA4LTIuN0EzLjksMy45LDAsMCwwLDEwMzEuNjUxLDIwMjQuNTg3WiIgZmlsbD0ibm9uZSIvPg0KICAgIDxwYXRoIGlkPSLQmtC+0L3RgtGD0YBfMTM3IiBkYXRhLW5hbWU9ItCa0L7QvdGC0YPRgCAxMzciIGQ9Ik0xMDM2Ljk0NywyMDI2LjQ3OGE1LjA2LDUuMDYsMCwwLDAtNC4yNTUtMy4wMTMsNS4wMzUsNS4wMzUsMCwwLDAtMi4yMzMuMzI0LDQuNzIzLDQuNzIzLDAsMCwwLTEuNTEuOTExYy0uMDc2LjA3LS4xNDIuMS0uMjQyLjAwOWE1LjA5MSw1LjA5MSwwLDAsMC02LjQ0MS0uMjI2LDUuMDkyLDUuMDkyLDAsMCwwLTEuOTkyLDMuNjI2LDQuNzA1LDQuNzA1LDAsMCwwLC4xNjUsMS43NDQsNS4wMzksNS4wMzksMCwwLDAsMS4zMTQsMi4yODJxMS44OTEsMS45LDMuNzg3LDMuNzksMS41NjQsMS41NjYsMy4xMjQsMy4xMzdjLjExNC4xMTQuMTg2LjEzNC4zLjAwNi4yMjItLjI0Mi40Ni0uNDcuNjkyLS43LDIuMDQ2LTIuMDQ2LDQuMDg2LTQuMSw2LjE0MS02LjEzNGE1LjAyOCw1LjAyOCwwLDAsMCwxLjU3Ny0zLjQyM0E1LjQ0OSw1LjQ0OSwwLDAsMCwxMDM2Ljk0NywyMDI2LjQ3OFptLTEuMjQ4LTEuMjI1YS4zNDcuMzQ3LDAsMCwxLC4wMzUuMTExLjMxMS4zMTEsMCwwLDEtLjQ2NS4yMjIuNDM0LjQzNCwwLDAsMSwuMS0uMDQ0LjIyNS4yMjUsMCwwLDAsLjIzMy0uMjA4QzEwMzUuNjEzLDIwMjUuMywxMDM1LjY2NywyMDI1LjI4LDEwMzUuNywyMDI1LjI1M1ptLS41NDYtLjM1M2EuMjk0LjI5NCwwLDAsMSwuMzc5LS4wNDljLS4yLjA4OS0uMzkyLjEzOC0uNDA2LjM2N0EuMjIuMjIsMCwwLDEsMTAzNS4xNTMsMjAyNC45Wm0tMTIuMzEyLjAxM2EuNjU5LjY1OSwwLDAsMSwuMjc3LS4xYy4wMTYsMCwuMDYzLjA0My4wNjMuMDY3YS4xLjEsMCwwLDEtLjA1OS4wNzVjLS4yMTUuMDg3LS4yMTUuMDg2LS4yOTQuMjk0QS4yMzkuMjM5LDAsMCwxLDEwMjIuODQxLDIwMjQuOTEzWm0xMi4yNyw2LjQ3MXEtMy4wNzMsMy4wODItNi4xNTUsNi4xNTljLS4xMTQuMTE0LS4xNzMuMS0uMjc2LS4wMDctMi4wNjgtMi4wNzQtNC4xNDctNC4xMzctNi4yMDYtNi4yMmEzLjc4LDMuNzgsMCwwLDEtMS4xMjEtMi44NjUsMy45MTQsMy45MTQsMCwwLDEsMS45NDItMy4zNTcsMy43NDIsMy43NDIsMCwwLDEsMS40MTYtLjUxMSwzLjk3NSwzLjk3NSwwLDAsMSwxLjU2NC4wNTIsMy45LDMuOSwwLDAsMSwxLjg4MSwxLjAzMmMuMTgzLjE3OS4zNzIuMzUzLjU0MS41NDUuMTA2LjEyLjE2Ny4wODMuMjYxLS4wMDYuMzQ2LS4zMjQuNjc4LS42NjgsMS4wNTItLjk1NmEzLjUsMy41LDAsMCwxLDEuNjQxLS42NjMsMy45LDMuOSwwLDAsMSwzLjU1NiwxLjIsMy43ODQsMy43ODQsMCwwLDEsMS4wOCwyLjdBMy44NjQsMy44NjQsMCwwLDEsMTAzNS4xMTEsMjAzMS4zODRaIiBmaWxsPSIjZmZiNDAwIiBzdHJva2U9IiNmZmI0MDAiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIwLjEwOCIvPg0KICA8L2c+DQo8L3N2Zz4NCg==');
+	}
+}
+
+//========================================================================================================================================================
 
 .popular {
 
@@ -1549,6 +1592,16 @@ h4 {
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+
+//========================================================================================================================================================
+
+.sale-baner {
+	width: 505px;
+	// height: 480px;
+	overflow: hidden;
+	border-radius: 10px;
+	margin-right: 20px;
 }
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
