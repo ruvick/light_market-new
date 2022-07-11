@@ -4785,6 +4785,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .cardImage {
   flex: 0 1 24.8%;
   height: 100%;
+  background: #f2f1f1;
   border-radius: 10px;
   overflow: hidden;
 }
