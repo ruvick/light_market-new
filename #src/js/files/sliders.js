@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 function sliders_bild_callback(params) { }
 
 // Сюда пишем класс нашего слайдера и меняем переменную
-let sliderBg = new Swiper('.slider-bg', {
+let sliderBg = new Swiper('.info-sl__slider', {
 	// effect: 'fade',
 	autoplay: {
 		delay: 3000,
