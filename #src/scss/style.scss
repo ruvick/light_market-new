@@ -1513,19 +1513,19 @@ h4 {
 
 //========================================================================================================================================================
 
-.page__side-title-block {
+.page__sidebar-title-block {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 43px;
 }
 
-.page__side-title {
+.page__sidebar-title {
 	font-size: 26px;
 	line-height: 35px;
 	margin-right: 13px;
 }
 
-.page__side-amount {
+.page__sidebar-amount {
 	font-size: 14px;
 	line-height: 19.4px;
 	color: #8c8b8b;
@@ -1574,6 +1574,90 @@ h4 {
 	background: #f2f1f1;
 	border-radius: 10px;
 	overflow: hidden;
+}
+
+//========================================================================================================================================================
+
+.page__sidebar-navigation {}
+
+.page__sidebar-navigation-col {
+	margin-bottom: 23px;
+}
+
+.page__sidebar-navigation-block-name {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page__sidebar-navigation-name {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.page__sidebar-navigation-menu {
+	padding: 13px 0;
+}
+
+.sidebar-navigation-catMenu {}
+
+.sidebar-navigation-catMenu-item {}
+
+.sidebar-navigation-catMenu-item-link {
+	display: block;
+	font-size: 14px;
+	line-height: 26px;
+	color: #161615;
+	padding-left: 33px;
+}
+
+.sidebar-navigation-catMenu-item-link:hover {
+	background: #E6E6E6;
+	border-radius: 10px;
+}
+
+//========================================================================================================================================================
+
+.page__sidebar {
+	flex: 0 1 20.5%;
+}
+
+//========================================================================================================================================================
+.page__sidebar-navigation-body {
+	padding: 16px 0;
+}
+
+.page__sidebar-navigation-body-menu {}
+
+.page__sidebar-navigation-body-menu-search {
+	width: 100%;
+	height: 36px;
+	padding: 0 27px;
+	border-radius: 10px;
+	background: #fff;
+	border: 0.45px solid #d2d1d1;
+	margin-bottom: 20px;
+}
+
+.page__sidebar-navigation-body-menu-options {}
+
+.page__sidebar-navigation-body-menu-options-item {
+	margin-bottom: 9px;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.page__sidebar-navigation-body-menu-options-item-input {}
+
+.page__sidebar-navigation-body-menu-options-item-input-text {
+	color: #A3A3A3;
+}
+
+.page__sidebar-navigation-body-menu-options-item-input-text-main {
+	color: #161615;
+	margin-right: 10px;
 }
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
