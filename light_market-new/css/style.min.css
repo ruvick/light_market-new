@@ -3212,7 +3212,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 /*Popup-CSS*/
 .header-top {
-  background: #313133;
+  background: #D2D1D1;
 }
 
 .header-top__inner {
@@ -3243,6 +3243,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .header-top ul li a:hover {
   border-bottom: 2px solid #fff;
   padding-bottom: 2px;
+}
+
+.header-top-index {
+  background: #313133;
 }
 
 .location-block__link {
@@ -4795,13 +4799,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   padding: 0 10px;
 }
 
-.page__main-banner {
-  margin-bottom: 48px;
-}
-
 .banner {
   height: 168px;
-  border: 1px solid #000;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page__main-banner {
+  background-image: url("../img/main-banner.jpg");
+  margin-bottom: 48px;
 }
 
 .main-prod-card {

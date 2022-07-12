@@ -1545,13 +1545,16 @@ h4 {
 
 //========================================================================================================================================================
 
-.page__main-banner {
-	margin-bottom: 48px;
-}
-
 .banner {
 	height: 168px;
-	border: 1px solid #000;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.page__main-banner {
+	background-image: url('../img/main-banner.jpg');
+	margin-bottom: 48px;
 }
 
 //========================================================================================================================================================
