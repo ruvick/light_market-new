@@ -380,6 +380,7 @@ h4 {
 	justify-content: center;
 	flex: 0 1 20%;
 	padding: 0 10px;
+	padding-bottom: 15px;
 }
 
 .circleCard {
@@ -429,7 +430,7 @@ h4 {
 	}
 
 	&__img {
-		flex: 0 1 270px;
+		flex: 0 1 100%;
 		height: 270px;
 		overflow: hidden;
 		margin-bottom: 23px;
@@ -457,6 +458,7 @@ h4 {
 	}
 
 	&__inner {
+		flex-wrap: wrap;
 		justify-content: space-between;
 		margin-bottom: 11px;
 	}
@@ -528,6 +530,10 @@ h4 {
 	}
 }
 
+.prod-card__price-item {
+	flex-wrap: wrap;
+}
+
 //========================================================================================================================================================
 
 .popular {
@@ -582,14 +588,17 @@ h4 {
 	padding: 0 15px;
 }
 
+.selection__column .cardType {
+	height: 302px;
+}
+
 .cardType {
 	flex: 0 1 100%;
-	height: 302px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover !important;
 	background-position: 0 0;
 	background: grey;
 	border-radius: 10px;

@@ -55,6 +55,19 @@
 	.footer__col:last-child {
 		margin-right: 0;
 	}
+
+	.selection__row {
+		flex-wrap: wrap;
+	}
+
+	.selection__column {
+		flex: 0 1 33%;
+		padding-bottom: 30px;
+	}
+
+	.sale-baner {
+		width: 450px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -69,6 +82,10 @@
 
 	.select-prod-sl {
 		width: 70%;
+	}
+
+	.popular__row {
+		flex-wrap: wrap;
 	}
 }
 
@@ -97,11 +114,6 @@
 
 @media (max-width: 1100px) {
 
-	.prod-card .prod-card__body,
-	.popular__row .prod-card__body {
-		flex: 0 1 19.8%;
-	}
-
 	.logist__item-text p {
 		max-width: 100%;
 	}
@@ -117,6 +129,15 @@
 
 	.header__middle {
 		margin-left: 35px;
+	}
+
+	.sale-baner {
+		width: 400px;
+		margin-right: 10px;
+	}
+
+	.sale-baner img {
+		object-fit: fill;
 	}
 }
 
@@ -145,11 +166,6 @@
 }
 
 @media (max-width: 1040px) {
-
-	.prod-card .prod-card__body,
-	.popular__row .prod-card__body {
-		flex: 0 1 19.8%;
-	}
 
 	.prod-card .prod-card__body .btn,
 	.popular__row .prod-card__body .btn {
@@ -201,6 +217,10 @@
 		align-items: center;
 		padding: 20px 0;
 	}
+
+	.popular__baner {
+		background-position: center;
+	}
 }
 
 @media (max-width: 992px) {
@@ -222,24 +242,6 @@
 }
 
 @media (max-width: 960px) {
-
-	.prod-card,
-	.popular__row {
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-
-	.prod-card .prod-card__body:last-child,
-	.popular__row .prod-card__body:last-child {
-		display: none;
-	}
-
-	.prod-card .prod-card__body,
-	.popular__row .prod-card__body {
-		flex: 0 1 43%;
-		padding: 15px 20px 15px 22px;
-		margin-bottom: 20px;
-	}
 
 	.prod-card .prod-card__body .btn,
 	.popular__row .prod-card__body .btn {
@@ -303,6 +305,18 @@
 	.footer__col {
 		flex: 0 1 25%;
 		margin-bottom: 20px;
+	}
+
+}
+
+@media (max-width: 940px) {
+	.sale-baner {
+		display: none;
+	}
+
+	.prod-card__column {
+		flex: 0 1 33.333%;
+		padding: 0 6.5px;
 	}
 }
 
@@ -423,6 +437,24 @@
 	.header__middle {
 		margin-left: 20px;
 	}
+
+	.popular__column {
+		flex: 0 1 33.333%;
+	}
+
+	.selection__row {
+		margin: 0 -10px;
+	}
+
+	.selection__column {
+		padding: 0 10px;
+		flex: 0 1 33%;
+		padding-bottom: 20px;
+	}
+
+	.selection__column .cardType {
+		height: 250px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -531,12 +563,6 @@
 		// height: 100%;
 		height: auto;
 		object-fit: cover;
-	}
-
-	.prod-card .prod-card__body,
-	.popular__row .prod-card__body {
-		flex: 0 1 48%;
-		// padding: 15px 15px;
 	}
 
 	.popular__baner {
@@ -656,6 +682,129 @@
 	.footer__col {
 		flex: 0 1 30%;
 	}
+
+	.about__column {
+		margin-right: 15px;
+	}
+
+	.about__column-text {
+		margin-bottom: 10px;
+	}
+
+	.title {
+		font-size: 20px;
+		line-height: 1.3;
+		margin-bottom: 15px;
+	}
+
+	.page {
+		padding: 55px 0;
+	}
+
+	.info-sl {
+		padding: 0;
+	}
+
+	.popular__row {
+		flex-wrap: nowrap;
+		overflow: auto;
+		width: auto;
+	}
+
+	.popular__column {
+		flex: 0 0 25%;
+	}
+
+	.circleCard__img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.circleCard__name {
+		font-size: 12px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
+	.popular__column {
+		flex: 0 0 18%;
+		padding-bottom: 0;
+	}
+
+	.popular__row::-webkit-scrollbar-thumb {
+		display: none;
+	}
+
+	.popular__baner {
+		min-height: 150px;
+	}
+
+	.selection__row {
+		margin: 0 -5px;
+	}
+
+	.selection__column {
+		padding: 0 5px;
+		flex: 0 1 33.333%;
+		padding-bottom: 10px;
+	}
+
+	.selection__column .cardType {
+		height: 230px;
+	}
+
+	.prod-card__img {
+		height: 200px;
+		margin-bottom: 10px;
+	}
+
+	.prod-card__text-sale {
+		font-size: 14px;
+		line-height: 1.2;
+		margin-bottom: 5px;
+	}
+
+	.prod-card__text-title {
+		line-height: 1.2;
+		margin-bottom: 8px;
+	}
+
+	.prod-card__inner {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom: 8px;
+	}
+
+	.prod-card__manuf {
+		margin-bottom: 0;
+	}
+
+	.prod-card__old-price {
+		font-size: 12px;
+		margin-right: 10px;
+	}
+
+	.prod-card__sale-icon {
+		font-size: 12px;
+		line-height: 1;
+		padding: 4px 6px;
+	}
+
+	.prod-card {
+		margin: 0 -5px;
+	}
+
+	.prod-card__column {
+		padding: 0 5px;
+	}
+
+	.about {
+		padding: 25px 0 15px 0;
+	}
+
+	.page {
+		padding: 55px 0 25px 0;
+	}
 }
 
 @media (max-width: 720px) {
@@ -745,16 +894,6 @@
 
 @media (max-width: 640px) {
 
-	.prod-card,
-	.popular__row {
-		justify-content: space-between;
-	}
-
-	.prod-card .prod-card__body,
-	.popular__row .prod-card__body {
-		padding: 15px 20px 15px 22px;
-	}
-
 	.logist__item {
 		flex: 1 1 83%;
 	}
@@ -798,11 +937,6 @@
 
 	.mob-search:before {
 		display: block;
-	}
-
-	.popular__baner {
-		min-height: 230px;
-		background-position: 38% 0;
 	}
 
 	.header__search {
@@ -880,6 +1014,19 @@
 	.pagination__nav-links {
 		max-width: 100%;
 		justify-content: space-between;
+	}
+
+	.popular__column {
+		flex: 0 0 23%;
+	}
+
+	.selection__column .cardType {
+		height: 200px;
+	}
+
+	.selection__column .cardType__color-block-text {
+		font-size: 18px;
+		line-height: 20px;
 	}
 }
 
@@ -963,6 +1110,23 @@
 	.footer__col_forms h3 br {
 		display: none;
 	}
+
+	.about__inner {
+		flex-wrap: wrap;
+	}
+
+	.about__column {
+		margin-right: 0;
+	}
+
+	.prod-card__column {
+		flex: 0 1 50%;
+		padding-bottom: 10px;
+	}
+
+	.prod-card {
+		flex-wrap: wrap;
+	}
 }
 
 @media (max-width: 515px) {
@@ -1041,6 +1205,18 @@
 	.tech-text__block-cl:last-child {
 		margin-top: 38px;
 	}
+
+	.page {
+		padding: 45px 0;
+	}
+
+	.popular__column {
+		flex: 0 0 28%;
+	}
+
+	.selection__column {
+		flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 500px) {
@@ -1054,11 +1230,6 @@
 }
 
 @media (max-width: 480px) {
-
-	.prod-card,
-	.popular__row {
-		justify-content: center;
-	}
 
 	.prod-card .prod-card__body,
 	.popular__row .prod-card__body {
@@ -1100,6 +1271,10 @@
 
 	.descript-prod p {
 		text-align: justify;
+	}
+
+	.popular__column {
+		flex: 0 0 30%;
 	}
 }
 
@@ -1179,6 +1354,23 @@
 	.footer-bot__item img {
 		width: 100%;
 	}
+
+	.popular__column {
+		flex: 0 0 36%;
+	}
+
+	.popular__baner {
+		min-height: 100px;
+	}
+
+	.selection__column .cardType {
+		height: 180px;
+	}
+
+	.prod-card__price-item .btn {
+		width: 100%;
+		margin-top: 5px;
+	}
 }
 
 @media (max-width: 380px) {
@@ -1204,6 +1396,15 @@
 	.pagination__numbers:nth-child(6) {
 		display: none;
 	}
+
+	.popular__column {
+		flex: 0 0 38%;
+	}
+
+	.prod-card__column {
+		flex: 0 1 100%;
+		padding-bottom: 10px;
+	}
 }
 
 @media (max-width: 340px) {
@@ -1216,6 +1417,10 @@
 	.pagination__back:before,
 	.pagination__next:after {
 		display: none;
+	}
+
+	.selection__column .cardType {
+		height: 150px;
 	}
 }
 
