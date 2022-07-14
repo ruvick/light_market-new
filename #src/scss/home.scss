@@ -5,7 +5,11 @@
   background: #FFB400;
 }
 
-.sale__descp {}
+.sale__descp {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 // Общий класс главной обертки
 .page-recurring {
