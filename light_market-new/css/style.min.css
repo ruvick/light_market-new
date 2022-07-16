@@ -3860,6 +3860,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   max-width: 915px;
   width: 100%;
   flex: 1 0 auto;
+  border-radius: 10px;
 }
 
 /* Точки (булиты) */
@@ -5033,7 +5034,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .page__sidebar {
-  flex: 0 1 20.5%;
+  flex: 0 0 20.5%;
+  margin-right: 15px;
 }
 
 .page__sidebar-navigation-body {
@@ -5192,6 +5194,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
   .menu__list li:nth-child(10) {
     display: none;
+  }
+
+  .page__main-catCard {
+    flex-wrap: wrap;
+  }
+
+  .page__main-catCard-column {
+    padding-bottom: 15px;
   }
 }
 @media (max-width: 1280px) {
