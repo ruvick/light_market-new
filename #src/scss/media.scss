@@ -702,24 +702,6 @@
 		flex-direction: column;
 	}
 
-	// .mob-menu {
-	// 	right: -50% !important;
-	// 	transition: right 0.8s;
-	// }
-	.mob-menu.active {
-		display: block !important;
-		position: fixed;
-		height: 100%;
-		margin-top: 75px;
-		width: 50%;
-		right: 0% !important;
-		transition: all 0.65s;
-	}
-
-	.mob-menu ul {
-		max-width: 100%;
-	}
-
 	.slider__item p {
 		top: 20%;
 		left: 43%;
@@ -1103,10 +1085,6 @@
 		flex: 0 0 auto;
 	}
 
-	.mob-menu.active {
-		margin-top: 65px;
-	}
-
 	.mob-search:before {
 		display: block;
 	}
@@ -1323,13 +1301,6 @@
 
 	.popular__row {
 		margin-bottom: 0px;
-	}
-
-	.mob-menu.active {
-		width: 100%;
-		left: 0%;
-		padding: 65px 0 5px 0;
-		margin-top: 5px;
 	}
 
 	.logist {
