@@ -1091,25 +1091,11 @@
 
 	.header__search {
 		display: none;
-		position: fixed;
-		left: 0;
-		z-index: -50;
-		max-width: 630px;
-		width: 100%;
-		background: #fff;
-		box-shadow: 0px 2px 2px 0px #d3820f;
-		padding: 0 10px;
-		transition: top 0.8s;
-	}
-
-	.header__search.active {
-		display: block;
-		top: 50px;
-		transition: top 0.8s;
 	}
 
 	.sub-search:after {
-		right: 20px;
+		top: 11px;
+		right: 12px;
 	}
 
 	.footer__col {
